@@ -7,7 +7,10 @@ namespace VetTechApi.Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public int TutorId { get; set; }
+
         [JsonIgnore]
         public Tutor? Tutor { get; set; }
+
+        public ICollection<Consulta> Consultas { get; set; } = new List<Consulta>();
     }
 }

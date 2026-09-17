@@ -16,8 +16,5 @@ namespace VetTechApi.Models
         [JsonIgnore]
         public Veterinario? Veterinario { get; set; }
 
-        public ICollection<Consulta> Consultas { get; set; } = new List<Consulta>();
-        public ICollection<Tutor> Tutores { get; set; } = new List<Tutor>();
-
     }
 }
